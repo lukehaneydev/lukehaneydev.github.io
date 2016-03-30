@@ -1,6 +1,6 @@
 /* Website template by freewebsitetemplates.com */
 html {
-	font-family: 'Trebuchet MS', sans-serif, Arial, Helvitica;
+	font-family: 'Trebuchet MS', sans-serif, Arial, Helvitica, Goudy Mediaeval;
 }
 body {
 	background: linear-gradient(to bottom,  #001789 0%,#525a81 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -13,7 +13,7 @@ body {
 	margin: 0 auto;
 }
 @font-face {
-	font-family: Montserrat; src: url('goudy_mediaeval_regular-webfont.ttf'); 
+	font-family: Goudy Mediaeval; src: url('goudy_mediaeval_regular-webfont.ttf'); 
 }
 img {
 	border: 0;
@@ -25,7 +25,8 @@ img {
 	background: url(../images/ssglogo.png) no-repeat center top;
 	min-height: 420px;
 	margin-bottom: 20px;
-}
+	font-family: 'Goudy Mediaeval';
+	}
 
 #connect {
 	float: left;
@@ -88,7 +89,7 @@ img {
 }
 #navigation li {
 	float: left;
-	font-family: 'Montserrat';
+	font-family: 'Goudy Mediaeval';
 	font-size: 22px;
 	font-weight: bold;
 	line-height: 40px;
@@ -223,7 +224,7 @@ img {
 	background-color: #fff36b;
 	color: #8f6f05;
 	display: block;
-	font-family: 'Montserrat';
+	font-family: 'Goudy Mediaeval';
 	font-size: 14px;
 	height: 20px;
 	line-height: 20px;
