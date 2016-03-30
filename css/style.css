@@ -261,24 +261,24 @@ img {
 	margin: 0 0 10px;
 }
 #description div span {
-	color: #9d7912;
+	color: #ffffff;
 	display: block;
 	font-size: 11px;
 	line-height: 20px;
 }
 #description div span a {
-	color: #9d7912;
+	color: #ffffff;
 	text-decoration: none;
 }
 #description p {
-	color: #9d7912;
+	color: #ffffff;
 	font-size: 13px;
 	line-height: 20px;
 	margin: 20px 0;
 	text-align: justify;
 }
 #description p a {
-	color: #9d7912;
+	color: #ffffff;
 }
 
 #footer div.navigation {
