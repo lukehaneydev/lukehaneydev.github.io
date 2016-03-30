@@ -103,7 +103,7 @@ img {
 	text-decoration: none;
 }
 #navigation a:hover, #navigation li.selected a {
-	color: #99f9f9;
+	color: #f9f9f9;
 	text-shadow: 1px 1px 0 #a8840b;
 }
 
