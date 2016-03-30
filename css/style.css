@@ -29,7 +29,7 @@ img {
 	}
 
 #connect {
-	float: left;
+	float: center;
 	display: inline-block;
 	height: 30px;
 	width: 300px;
@@ -82,26 +82,28 @@ img {
 
 /** Navigation **/
 #navigation {
+	display: inline-block;
+    text-align: center;
 	height: 40px;
 	list-style-type: none;
 	margin: 0;
 	padding: 50px 20px 12px 0;
 }
 #navigation li {
-	float: left;
+	display: inline-block;
+    text-align:center; 
 	font-family: 'Goudy Mediaeval';
 	font-size: 22px;
 	font-weight: bold;
 	line-height: 40px;
 	width: 186px;
-	text-align: center;
 }
 #navigation a {
-	color: #9d7912;
+	color: #ffffff;
 	text-decoration: none;
 }
 #navigation a:hover, #navigation li.selected a {
-	color: #f9f9f5;
+	color: #99f9f9;
 	text-shadow: 1px 1px 0 #a8840b;
 }
 
