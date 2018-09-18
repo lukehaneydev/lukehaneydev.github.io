@@ -15,6 +15,7 @@
   padding-top: 185px;
 }
 
+
 .subhead-container{
   position: absolute;
   height: 300px;
@@ -147,35 +148,11 @@ h2{
   clear: both; }
 
 
-@media (max-width: 1150px){
 
-  .contents-container{
-    margin-left: 0px;   
-  }
-
-  .thumb-wma, .thumb-ns,
-  .thumb-sns, .thumb-snsr {
-    height: 190px;
-    width:  800px;
-    margin-top: 30px;
-  }
-
-  .thumb-wma h2, .thumb-ns h2,
-  .thumb-sns h2, .thumb-snsr h2{
-    font-size: 24px;
-  }
-
-}
-
-@media (max-width: 840px){
-  
-
-  .thumb-wma, .thumb-ns,
-  .thumb-sns, .thumb-snsr {
-    height: 90px;
-    width:  540px;
-  }
-
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
 
   .scrollDown{
     visibility: hidden;
@@ -184,43 +161,170 @@ h2{
   .scrollUp{
     visibility: hidden;
   }
-}
 
-@media (max-width: 620px){
+  .title-container{
+    padding-top: 0px;
+  }
+
+  .title-container h1{
+    font-size: 24px;
+  }
+
+  .title-container h2{
+    font-size: 16px;
+  }
+
+  .contents-container{
+    margin-left: 0px;   
+    margin-top: 24px;
+    font-size: 16px;
+    padding-right: 24px;
+  }
 
   .contents-container h1{
     font-size: 24px;
   }
 
+  .subhead-container{
+    padding-top: 10px;
+  }
+  .subhead-container h1{
+    font-size: 24px;
+  }
+
+  .thumb-wma, .thumb-ns,
+  .thumb-sns, .thumb-snsr {
+    height: 65px;
+    width:  280px;
+    margin-top: 30px;
+  }
+
+  .thumb-wma h2, .thumb-ns h2,
+  .thumb-sns h2, .thumb-snsr h2{
+    font-size: 16px;
+    position: absolute;
+    display: none;
+    padding-left: 10px;
+  }
+
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  .scrollDown{
+    height: 50px;
+    width: 128px;
+  }
+  
+  .scrollUp{
+    visibility: hidden;
+  }
+
+  .title-container{
+    padding-top: 64px;
+  }
+
   .title-container h1{
     font-size: 32px;
   }
+
   .title-container h2{
     font-size: 24px;
   }
 
+  .contents-container{
+    margin-left: 600px;   
+    margin-top: 24px;
+    font-size: 24px;
+    padding-right: 16px;
+  }
 
+  .contents-container h1{
+    font-size: 32px;
+  }
+
+  .subhead-container{
+    padding-top: 24px;
+  }
   .subhead-container h1{
     font-size: 32px;
   }
 
   .thumb-wma, .thumb-ns,
   .thumb-sns, .thumb-snsr {
-    height: 80px;
-    width:  360px;
+    height: 124px;
+    width:  970px;
     margin-top: 30px;
   }
-  
 
+  .thumb-wma h2, .thumb-ns h2,
+  .thumb-sns h2, .thumb-snsr h2{
+    font-size: 32px;
+    position: absolute;
+    display: none;
+    padding-left: 10px;
+  }
 }
 
-
-
-@media (max-height: 750px){
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) {
   
+  .scrollDown{
+    visibility: hidden;
+  }
+  
+  .scrollUp{
+    visibility: hidden;
+  }
 
   .title-container{
     padding-top: 0px;
   }
-  
+
+  .title-container h1{
+    font-size: 24px;
+  }
+
+  .title-container h2{
+    font-size: 16px;
+  }
+
+  .contents-container{
+    margin-left: 0px;   
+    margin-top: 24px;
+    font-size: 16px;
+    padding-right: 24px;
+  }
+
+  .contents-container h1{
+    font-size: 24px;
+  }
+
+  .subhead-container{
+    padding-top: 10px;
+  }
+  .subhead-container h1{
+    font-size: 24px;
+  }
+
+  .thumb-wma, .thumb-ns,
+  .thumb-sns, .thumb-snsr {
+    height: 65px;
+    width:  280px;
+    margin-top: 30px;
+  }
+
+  .thumb-wma h2, .thumb-ns h2,
+  .thumb-sns h2, .thumb-snsr h2{
+    font-size: 16px;
+    position: absolute;
+    display: none;
+    padding-left: 10px;
+  }
+
 }
