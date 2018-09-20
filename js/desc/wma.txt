@@ -1,2 +1,4 @@
+Wizard Man Adventures was a test platformer game I created in Unity in 2015. 
+I considered further developing this into a full game but had some issues (Mostly to do with the fact the Unity Engine's 2D side was still in beta at that time) with physics related stuff.
 Also this was one of my first games developed on a larger scale than I was used to at the time, meaning the framework for the code was not very optimised so I ended up unfortunately abandoning it.
 I'm still quite fond of the idea of a rocket jumping platformer, so I will possibly return to this idea in the future.
