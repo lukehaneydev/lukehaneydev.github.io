@@ -195,41 +195,44 @@ and (max-device-width : 480px) {
   }
 
   .title-container h1{
-    font-size: 24px;
+    font-size: 128px;
   }
 
   .title-container h2{
-    font-size: 16px;
+    font-size: 82px;
   }
 
   .contents-container{
+    width: 700px;
+    height: 900px;
     margin-left: 0px;   
     margin-top: 24px;
-    font-size: 16px;
+    font-size: 52px;
     padding-right: 24px;
   }
 
   .contents-container h1{
-    font-size: 24px;
+    font-size: 82px;
   }
 
   .subhead-container{
-    padding-top: 10px;
+    padding-top: 64px;
   }
   .subhead-container h1{
-    font-size: 24px;
+    font-size: 74px;
   }
 
   .thumb-wma, .thumb-ns,
   .thumb-sns, .thumb-snsr {
-    height: 65px;
-    width:  280px;
-    margin-top: 30px;
+    background-position: right;
+    height: 280px;
+    width:  900px;
+    margin-top: 50px;
   }
 
   .thumb-wma h2, .thumb-ns h2,
   .thumb-sns h2, .thumb-snsr h2{
-    font-size: 16px;
+    font-size: 64px;
     position: absolute;
     display: none;
     padding-left: 10px;
@@ -319,13 +322,13 @@ and (max-device-width : 1024px) {
   }
 }
 
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 4) {
-  
+
+@media only screen 
+and (min-device-width : 800px) 
+and (max-device-width : 1280px) {
   .scrollDown{
-    visibility: hidden;
+    height: 50px;
+    width: 128px;
   }
   
   .scrollUp{
@@ -333,48 +336,48 @@ and (max-device-width : 1024px) {
   }
 
   .title-container{
-    padding-top: 0px;
+    padding-top: 64px;
   }
 
   .title-container h1{
-    font-size: 24px;
+    font-size: 32px;
   }
 
   .title-container h2{
-    font-size: 16px;
+    font-size: 24px;
   }
 
   .contents-container{
-    margin-left: 0px;   
+    margin-left: 600px;   
     margin-top: 24px;
-    font-size: 16px;
-    padding-right: 24px;
+    font-size: 24px;
+    padding-right: 16px;
   }
 
   .contents-container h1{
-    font-size: 24px;
+    font-size: 32px;
   }
 
   .subhead-container{
-    padding-top: 10px;
+    padding-top: 24px;
   }
   .subhead-container h1{
-    font-size: 24px;
+    font-size: 32px;
   }
 
   .thumb-wma, .thumb-ns,
   .thumb-sns, .thumb-snsr {
-    height: 65px;
-    width:  280px;
+    height: 124px;
+    width:  970px;
     margin-top: 30px;
   }
 
   .thumb-wma h2, .thumb-ns h2,
   .thumb-sns h2, .thumb-snsr h2{
-    font-size: 16px;
+    font-size: 32px;
     position: absolute;
     display: none;
     padding-left: 10px;
   }
-
 }
+
