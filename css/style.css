@@ -37,6 +37,28 @@
   
 }
 
+
+.video-container{
+  position: relative;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; 
+}
+
+
+#video-title{
+  color: white;
+  font-size: 46px;
+  text-decoration: underline;
+}
+#video-description{
+  display: block;
+  width: 680px;
+  color: white;
+}
+
 .thumbnail-container{
   
   position: relative;
@@ -57,6 +79,7 @@
   -webkit-filter: blur(2px);
   filter: blur(2px);
   background-size: cover;
+  cursor: pointer;
 }
 
 .thumb-wma{
@@ -139,6 +162,11 @@ h2{
   background-color: #0d091d;
 }
 
+.color.change{
+
+  background-color: #0d091d;
+}
+
 
 /* Self Clearing Goodness */
 .container:after,
@@ -208,6 +236,28 @@ and (max-device-width : 480px) {
     position: absolute;
     display: none;
     padding-left: 10px;
+  }
+
+}
+
+
+@media(max-height: 800px){
+
+  .subhead-container h1{
+    font-size: 74px;
+  }
+
+  .thumb-wma, .thumb-ns,
+  .thumb-sns, .thumb-snsr {
+    background-position: right;
+    height: 85px;
+    width: 1000px;
+    margin-top: 20px;
+  }
+
+  .thumb-wma h2, .thumb-ns h2,
+  .thumb-sns h2, .thumb-snsr h2{
+    font-size: 32px;
   }
 
 }
