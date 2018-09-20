@@ -1,8 +1,2 @@
-Test test test test
-
-waweadasd
-
-awdawdasd
-
-
-fourth line
+Also this was one of my first games developed on a larger scale than I was used to at the time, meaning the framework for the code was not very optimised so I ended up unfortunately abandoning it.
+I'm still quite fond of the idea of a rocket jumping platformer, so I will possibly return to this idea in the future.

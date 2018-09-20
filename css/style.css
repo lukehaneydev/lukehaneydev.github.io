@@ -49,12 +49,15 @@
 
 
 #video-title{
+  display: block;
+  padding-bottom: 12px;
   color: white;
   font-size: 46px;
   text-decoration: underline;
 }
 #video-description{
   display: block;
+  padding-top: 20px;
   width: 680px;
   color: white;
 }

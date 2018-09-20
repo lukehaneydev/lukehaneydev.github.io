@@ -45,9 +45,11 @@ $(function() {
 
         $(".thumb-wma").click(function()
         { 
+            //Goto wma page
+
             vName.textContent="Wizard Man Adventures";
 
-            $.get("desc/wma.txt", function(data){
+            $.get("http://haney.zone/js/desc/wma.txt", function(data){
                 vDesc.textContent = data;
             })
 
@@ -59,18 +61,47 @@ $(function() {
         $(".thumb-ns").click(function()
         { 
             //Goto ns page
+
+            vName.textContent="NOSPHERE";
+
+            $.get("http://haney.zone/js/desc/ns.txt", function(data){
+                vDesc.textContent = data;
+            })
+
+            $("#video-player").attr("src", "https://www.youtube.com/embed/AA8v9JrgxB8");
+            $.scrollify.move("#video");
+
         });
         
-        $(".thumb-wma").click(function()
+        $(".thumb-sns").click(function()
         { 
             //Goto sns page
+
+            vName.textContent="Spells 'n' Stuff";
+
+            $.get("http://haney.zone/js/desc/sns.txt", function(data){
+                vDesc.textContent = data;
+            })
+
+            $("#video-player").attr("src", "https://www.youtube.com/embed/AA8v9JrgxB8");
+            $.scrollify.move("#video");
+
         });
         
-        $(".thumb-wma").click(function()
+        $(".thumb-snsr").click(function()
         { 
             //Goto snsr page
-        });
 
+            vName.textContent="Spells 'n' Stuff Remake";
+
+            $.get("http://haney.zone/js/desc/snsr.txt", function(data){
+                vDesc.textContent = data;
+            })
+
+            $("#video-player").attr("src", "https://www.youtube.com/embed/AA8v9JrgxB8");
+            $.scrollify.move("#video");
+
+        });
 
 
     });
