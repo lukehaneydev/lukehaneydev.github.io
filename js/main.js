@@ -52,7 +52,7 @@ $(function() {
             })
 
             
-            $("#video-player").attr("src", "https://www.youtube.com/embed/K3Qzzggn--s");
+            $("#video-player").attr("src", "https://www.youtube.com/embed/AA8v9JrgxB8");
             $.scrollify.move("#video");
         });
 
