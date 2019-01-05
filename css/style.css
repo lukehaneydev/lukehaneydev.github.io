@@ -313,7 +313,85 @@ section {
 }
 
 
+/* Contact Banner Style */
+
+
+
+section.banner-contact {
+  padding: 0px;
+}
+
+.banner-contact {
+  background-image: url(../img/contact_banner.jpg);
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-contact .banner-caption {
+  padding: 200px 0px;
+  text-align: center;
+}
+
+.banner-contact .banner-caption .line-dec {
+  width: 80px;
+  height: 3px;
+  background-color: #4883ff;
+}
+
+.banner-contact .banner-caption h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 42px;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+.banner-contact .banner-caption h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 32px;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+.banner-contact .banner-caption h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+.banner-contact .banner-caption h5 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+.banner-contact .banner-caption span {
+  font-size: 22px;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.banner-contact .banner-caption .blue-button {
+  margin-top: 30px;
+}
+
+.banner-contact .submit-form {
+  border-bottom: 5px solid #4883ff;
+  background-color: #fff;
+  padding: 15px;
+}
+
 /* Second Banner Style */
+
+
 
 section.banner {
   padding: 0px;
@@ -340,7 +418,7 @@ section.banner {
 }
 
 .banner2 .banner-caption h2 {
-  margin-top: 20px;
+
   margin-bottom: 20px;
   font-size: 42px;
   letter-spacing: 0.5px;
