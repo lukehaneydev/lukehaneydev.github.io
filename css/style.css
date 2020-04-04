@@ -127,7 +127,7 @@ body {
   line-height: 1.6;
   font-weight: 300;
   font-family: "futura-pt", Helvetica, Arial, sans-serif;
-  background-color: #e1f3f4;
+  background-color: #A9C2DE;
   color: #363030; }
 
 .logo{background:url(images/logo.png) no-repeat; width:67px; height:180px;margin-top:8%;}
@@ -157,7 +157,7 @@ h2{
 }
 
 .color.first{
-  background-color: #e1f3f4;
+  background-color: #A9C2DE;
 }
 
 .color.second{
