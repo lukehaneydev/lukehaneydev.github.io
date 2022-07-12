@@ -16,51 +16,99 @@ $(document).ready(function () {
 	//  supplied by mouse event into the coordinate system with 
 	//  its reference point placed in the center of the tracking area.
 
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		$('.tracking-area').each(function() {
+			$(this).on("touchmove", function () {
+				
+				var trackingAreaShiftX = $(this).offset().left;
+				var trackingAreaShiftY = $(this).offset().top;
 
+				var halfTrackingAreaWidth = $(this).width() / 2;
+				var halfTrackingAreaHeight = $(this).height() / 2;
+				
+				var mouseCoordinateCorrectionX = trackingAreaShiftX + halfTrackingAreaWidth;
+				var mouseCoordinateCorrectionY = trackingAreaShiftY + halfTrackingAreaHeight;
+				//  Translate cooridnates of the mouse ponter 
+				var x = event.clientX - mouseCoordinateCorrectionX;
+				var y = event.clientY - mouseCoordinateCorrectionY;
+				//  Calculate degrees of rotation with respect to their maximum values
+				var rotationY = x * maxRotationDegreesX / halfTrackingAreaWidth;
+				var rotationX = -y * maxRotationDegreesY / halfTrackingAreaHeight;
+				//  Construct CSS transform setting string
+				var transform = `perspective(${perspectivePx}px) rotate3d(1, 0, 0, ${rotationX}deg) rotate3d(0, 1, 0, ${rotationY}deg)`;
+				//  Apply the transformation
+				
+				
+				var transformer = $(this).find('.transformation-area');
+				$(transformer).css("-webkit-transform", transform);
+				$(transformer).css("-moz-transform", transform);
+				$(transformer).css("-ms-transform", transform);
+				$(transformer).css("-o-transform", transform);
+				$(transformer).css("transform", transform);
+			});
+		});
+	
+		$('.tracking-area').each(function() {
+			$(this).on("touchend", function () {
+				//  Construct CSS transform setting string
+				var transformOut = `perspective(${perspectivePx}px) rotate3d(1, 0, 0, 0) rotate3d(0, 1, 0, 0`;
+				//  Apply the transformation
+				$(".transformation-area").css("-webkit-transform", transformOut);
+				$(".transformation-area").css("-moz-transform", transformOut);
+				$(".transformation-area").css("-ms-transform", transformOut);
+				$(".transformation-area").css("-o-transform", transformOut);
+				$(".transformation-area").css("transform", transformOut);
+			});
+		});
+	}
+	else
+	{
+		$('.tracking-area').each(function() {
+			$(this).on("mousemove", function () {
+				
+				var trackingAreaShiftX = $(this).offset().left;
+				var trackingAreaShiftY = $(this).offset().top;
+
+				var halfTrackingAreaWidth = $(this).width() / 2;
+				var halfTrackingAreaHeight = $(this).height() / 2;
+				
+				var mouseCoordinateCorrectionX = trackingAreaShiftX + halfTrackingAreaWidth;
+				var mouseCoordinateCorrectionY = trackingAreaShiftY + halfTrackingAreaHeight;
+				//  Translate cooridnates of the mouse ponter 
+				var x = event.clientX - mouseCoordinateCorrectionX;
+				var y = event.clientY - mouseCoordinateCorrectionY;
+				//  Calculate degrees of rotation with respect to their maximum values
+				var rotationY = x * maxRotationDegreesX / halfTrackingAreaWidth;
+				var rotationX = -y * maxRotationDegreesY / halfTrackingAreaHeight;
+				//  Construct CSS transform setting string
+				var transform = `perspective(${perspectivePx}px) rotate3d(1, 0, 0, ${rotationX}deg) rotate3d(0, 1, 0, ${rotationY}deg)`;
+				//  Apply the transformation
+				
+				
+				var transformer = $(this).find('.transformation-area');
+				$(transformer).css("-webkit-transform", transform);
+				$(transformer).css("-moz-transform", transform);
+				$(transformer).css("-ms-transform", transform);
+				$(transformer).css("-o-transform", transform);
+				$(transformer).css("transform", transform);
+			});
+		});
+	
+		$('.tracking-area').each(function() {
+			$(this).on("mouseleave", function () {
+				//  Construct CSS transform setting string
+				var transformOut = `perspective(${perspectivePx}px) rotate3d(1, 0, 0, 0) rotate3d(0, 1, 0, 0`;
+				//  Apply the transformation
+				$(".transformation-area").css("-webkit-transform", transformOut);
+				$(".transformation-area").css("-moz-transform", transformOut);
+				$(".transformation-area").css("-ms-transform", transformOut);
+				$(".transformation-area").css("-o-transform", transformOut);
+				$(".transformation-area").css("transform", transformOut);
+			});
+		});
+	}
 
 	
-	$('.tracking-area').each(function() {
-		$(this).on("mousemove", function () {
-			
-			var trackingAreaShiftX = $(this).offset().left;
-			var trackingAreaShiftY = $(this).offset().top;
-
-			var halfTrackingAreaWidth = $(this).width() / 2;
-			var halfTrackingAreaHeight = $(this).height() / 2;
-			
-			var mouseCoordinateCorrectionX = trackingAreaShiftX + halfTrackingAreaWidth;
-			var mouseCoordinateCorrectionY = trackingAreaShiftY + halfTrackingAreaHeight;
-			//  Translate cooridnates of the mouse ponter 
-			var x = event.clientX - mouseCoordinateCorrectionX;
-			var y = event.clientY - mouseCoordinateCorrectionY;
-			//  Calculate degrees of rotation with respect to their maximum values
-			var rotationY = x * maxRotationDegreesX / halfTrackingAreaWidth;
-			var rotationX = -y * maxRotationDegreesY / halfTrackingAreaHeight;
-			//  Construct CSS transform setting string
-			var transform = `perspective(${perspectivePx}px) rotate3d(1, 0, 0, ${rotationX}deg) rotate3d(0, 1, 0, ${rotationY}deg)`;
-			//  Apply the transformation
-			
-			
-			var transformer = $(this).find('.transformation-area');
-			$(transformer).css("-webkit-transform", transform);
-			$(transformer).css("-moz-transform", transform);
-			$(transformer).css("-ms-transform", transform);
-			$(transformer).css("-o-transform", transform);
-			$(transformer).css("transform", transform);
-		});
-	});
 	
-	$('.tracking-area').each(function() {
-		$(this).on("mouseleave", function () {
-			//  Construct CSS transform setting string
-			var transformOut = `perspective(${perspectivePx}px) rotate3d(1, 0, 0, 0) rotate3d(0, 1, 0, 0`;
-			//  Apply the transformation
-			$(".transformation-area").css("-webkit-transform", transformOut);
-			$(".transformation-area").css("-moz-transform", transformOut);
-			$(".transformation-area").css("-ms-transform", transformOut);
-			$(".transformation-area").css("-o-transform", transformOut);
-			$(".transformation-area").css("transform", transformOut);
-		});
-	});
 	
 });

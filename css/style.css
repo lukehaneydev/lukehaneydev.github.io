@@ -101,7 +101,9 @@ a {
 
 
 
-
+#somewheresleeping_albumart{
+	background-image: url('images/somewheresleeping_albumart.webp');
+}
 
 #monkey_albumart{
 	background-image: url('images/monkey_albumart.webp');
